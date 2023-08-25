@@ -854,3 +854,34 @@ header{
 
 //.... Our-services
 
+.our-services{
+
+  .container{
+
+    .col-box{
+      width: 100%;
+      height: 100%;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .col-box-min{
+      width: 100%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+}
+
+
+//.... Our-services end
