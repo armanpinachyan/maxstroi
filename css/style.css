@@ -259,95 +259,16 @@ body {
   width: 100%;
 }
 
-.modal-info-block .modal-body-info .modal-headingg {
-  margin-bottom: 20px;
-  color: #000;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: normal;
+.modal-info-block .modal-body-info .col-mod {
+  width: 100%;
 }
-@media (max-width: 425px) {
-  .modal-info-block .modal-body-info .modal-headingg {
-    font-size: 34px;
-  }
-}
-.modal-info-block .modal-body-info .box-subtitle {
-  color: #323232;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.modal-info-block .modal-body-info span {
-  color: #323232;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.modal-info-block .modal-body-info h4 {
-  color: #323232;
-  font-size: 1.0625rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.modal-info-block .modal-body-info .box-title {
-  color: #323232;
-  font-size: 1.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.modal-info-block .modal-body-info .box2-title {
-  color: #323232;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.modal-info-block .modal-body-info .buttons {
-  display: flex;
-  margin-bottom: 50px;
-}
-@media (max-width: 425px) {
-  .modal-info-block .modal-body-info .buttons {
-    display: block;
-    width: 100%;
-  }
-}
-.modal-info-block .modal-body-info .buttons .btn-green {
-  margin-right: 15px;
-  background: #4BCA1E;
-}
-@media (max-width: 425px) {
-  .modal-info-block .modal-body-info .buttons .btn-green {
-    display: block;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-.modal-info-block .modal-body-info .buttons .btn-green img {
-  margin-right: 10px;
-}
-@media (max-width: 425px) {
-  .modal-info-block .modal-body-info .buttons .btn-blue {
-    display: block;
-    width: 100%;
-  }
-}
-.modal-info-block .modal-body-info .buttons .btn-blue img {
-  margin-left: 10px;
-}
-.modal-info-block .modal-body-info .box-image {
+.modal-info-block .modal-body-info .col-mod .image {
   width: 100%;
   height: 100%;
 }
-.modal-info-block .modal-body-info .box-image img {
+.modal-info-block .modal-body-info .col-mod .image img {
   width: 100%;
   object-fit: cover;
-  height: 100%;
 }
 
 .btn-fix-call {
@@ -975,6 +896,89 @@ header .container .header-body .header-text .header-title {
 @media (max-width: 425px) {
   .slick-prev {
     left: 5px !important;
+  }
+}
+
+.why_choose_us {
+  margin-top: 4.375rem;
+}
+.why_choose_us .inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .why_choose_us .inner {
+    justify-content: center;
+  }
+}
+.why_choose_us .inner .col-box {
+  width: calc(20% - 15px);
+  height: 160px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.9375rem;
+  position: relative;
+}
+.why_choose_us .inner .col-box:last-child {
+  margin-right: 0;
+}
+@media (max-width: 1024px) {
+  .why_choose_us .inner .col-box {
+    width: calc(32% - 15px);
+  }
+}
+@media (max-width: 576px) {
+  .why_choose_us .inner .col-box {
+    width: calc(100% - 15px) !important;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.why_choose_us .inner .col-box .number {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: #96B6C5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px; /* 142.857% */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.why_choose_us .inner .col-box p {
+  padding: 40px 6px 0 6px;
+  text-align: center;
+  color: #292929;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+@media (max-width: 1024px) {
+  .why_choose_us .inner .col-box2 {
+    width: calc(50% - 15px) !important;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .why_choose_us .inner .col-box2 {
+    width: calc(100% - 15px) !important;
+    margin-right: 0;
+    margin-top: 0;
   }
 }
 

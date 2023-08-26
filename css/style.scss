@@ -286,99 +286,23 @@ body {
 
   .modal-body-info{
 
-    .modal-headingg{
-      margin-bottom: 20px ;
-      color: #000;
-      font-weight: 400;
-      font-size: 3rem;
-      line-height: normal;
-      @media (max-width: 425px) {
-        font-size: 34px ;
-      }
-    }
-
-    .box-subtitle{
-      color: #323232;
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-
-        span{
-      color: #323232;
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      }
-
-    h4{
-      color: #323232;
-      font-size: 1.0625rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-    }
-
-      .box-title{
-        color: #323232;
-        font-size: 1.875rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
-
-        .box2-title{
-        color: #323232;
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
-
-      .buttons{
-        display: flex;
-        margin-bottom: 50px;
-        @media (max-width: 425px) {
-          display: block;
-          width: 100%;
-        }
-        .btn-green{
-          margin-right: 15px;
-          background: #4BCA1E;
-          @media (max-width: 425px) {
-            display: block;
-            width: 100%;
-            margin-right: 0;
-            margin-bottom: 10px;
-          }
-          img{
-            margin-right: 10px;
-          }
-        }
-        .btn-blue{
-          @media (max-width: 425px) {
-            display: block;
-            width: 100%;
-          }
-          img{
-            margin-left: 10px;
-          }
-        }
-      }
-
-      .box-image{
+  .col-mod{
+    width: 100%;
+    .image{
+      width: 100%;
+      height: 100%;
+      img{
         width: 100%;
-        height: 100%;
-        img{
-          width: 100%;
-          object-fit: cover;
-          height: 100%;
-        }
+        object-fit: cover;
+      }
+    }
+  }
+
+
+
       }
 
-  }
+
 
 }
 
@@ -1057,3 +981,92 @@ header{
 
 
 //.... OutWork end
+
+
+
+//..... whyichosseus
+
+.why_choose_us{
+
+  margin-top: 4.375rem;
+
+
+  .inner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
+    .col-box{
+      width: calc(20% - 15px);
+      height: 160px;
+      border-radius: 10px;
+      background: #FFF;
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.9375rem;
+      position: relative;
+      &:last-child{
+        margin-right: 0;
+      }
+      @media (max-width: 1024px) {
+        width: calc(32% - 15px);
+      }
+      @media (max-width: 576px) {
+        width: calc(100% - 15px) !important;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .number{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background: #96B6C5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -10%;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 50px; /* 142.857% */
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+      }
+      p{
+        padding: 40px 6px 0 6px;
+        text-align: center;
+        color: #292929;
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.72px;
+      }
+    }
+    .col-box2{
+      @media (max-width: 1024px) {
+        width: calc(50% - 15px) !important;
+        margin-top: 20px;
+      }
+      @media (max-width: 576px) {
+        width: calc(100% - 15px) !important;
+        margin-right: 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+}
+
+
+
+// ..... whyichosseus end
+
+
