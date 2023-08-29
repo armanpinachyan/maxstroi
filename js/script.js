@@ -26,6 +26,12 @@ $('.mobile-menu-board').on('click', function (){
     }
 })
 
+const menu_item_mobile_teg = $('.menu-item-mobile-teg')
+const menu_ItemMobile = $('.menu-item-mobile');
+
+menu_item_mobile_teg.on('click', function (){
+    menu_ItemMobile.removeClass(active);
+})
 
 //  ... Modal out serviser
 
@@ -57,8 +63,8 @@ $('.slider').slick({
     lazyLoad: 'progressive',
     infinite: true,
     speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [

@@ -260,7 +260,7 @@ body {
       }
 
       .image{
-        max-width: 500px;
+        //max-width: 500px;
         width: 100%;
         height: 500px;
         img{
@@ -357,13 +357,13 @@ body {
     transform: scale(1);
   }
   15% {
-    box-shadow: 0 0 0 5px rgba(3, 160, 209, 0.4);
+    box-shadow: 0 0 0 5px rgba(121, 167, 183, 0.4);
   }
   25% {
-    box-shadow: 0 0 0 10px rgba(3, 160, 209, 0.4), 0 0 0 20px rgba(3, 160, 209, 0.2);
+    box-shadow: 0 0 0 10px rgba(121, 167, 183, 0.4), 0 0 0 20px rgba(121, 167, 183, 0.2);
   }
   25% {
-    box-shadow: 0 0 0 15px rgba(3, 160, 209, 0.4), 0 0 0 30px rgba(3, 160, 209, 0.2);
+    box-shadow: 0 0 0 15px rgba(121, 167, 183, 0.4), 0 0 0 30px rgba(121, 167, 183, 0.2);
   }
 
 }
@@ -478,7 +478,7 @@ body {
             margin: 0 .2rem;
             .fa-whatsapp{
               color: #1FAF38;
-              font-size: 25px;
+              font-size: 27px;
             }
             .fa-telegram{
               color: #2AABEE;
@@ -668,16 +668,20 @@ header{
         padding: 5rem 0 6.875rem 4.375rem;
         width: 100%;
         @media (max-width: 768px) {
-          padding: 3rem 0 0 1rem;
+          padding: 3.5rem 0 0 2rem;
         }
         .header-headeing {
           color: #FFF;
           font-size: 2.5rem;
           font-style: normal;
           font-weight: 700;
-          line-height: 50px; /* 125% */
+          line-height: 3.125rem; /* 125% */
           letter-spacing: 1.6px;
           text-transform: uppercase;
+          @media (max-width: 768px) {
+            line-height: 2.8rem;
+            margin-bottom: 10px;
+          }
           @media (max-width: 576px) {
             font-size: 2rem;
           }
@@ -819,8 +823,7 @@ header{
       .slick-track {
         display: flex;
         .slick-slide {
-          width: 223px !important;
-          height: 191px !important;
+          height: 300px !important;
           border-radius: 20px !important;
           margin-right: 20px !important;
           cursor: pointer;
@@ -999,6 +1002,7 @@ header{
     flex-wrap: wrap;
     @media (max-width: 1024px) {
       justify-content: center;
+      gap: 30px;
     }
     .col-box{
       width: calc(20% - 15px);
@@ -1019,12 +1023,15 @@ header{
         box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
       }
       @media (max-width: 1024px) {
-        width: calc(32% - 15px);
+        width: calc(50% - 15px);
+        margin-right: 0;
+        margin-top: 15px;
       }
       @media (max-width: 576px) {
         width: calc(100% - 15px) !important;
         margin-right: 0;
         margin-bottom: 20px;
+        margin-top: 0;
       }
       .number{
         width: 50px;
@@ -1038,7 +1045,7 @@ header{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -10%;
+        top: -14.5%;
         text-align: center;
         font-size: 35px;
         font-weight: 600;
@@ -1059,12 +1066,16 @@ header{
     .col-box2{
       @media (max-width: 1024px) {
         width: calc(50% - 15px) !important;
-        margin-top: 20px;
       }
       @media (max-width: 576px) {
         width: calc(100% - 15px) !important;
         margin-right: 0;
-        margin-top: 0;
+      }
+    }
+    .col-box3{
+      @media (max-width: 1024px) {
+        width: calc(100% - 15px) !important;
+        margin-right: 0;
       }
     }
   }
@@ -1113,9 +1124,8 @@ header{
       }
       .heading{
         text-align: left;
-        white-space: nowrap;
-        @media (max-width: 1024px) {
-          white-space: unset;
+        @media (max-width: 700px) {
+          font-size: 2rem;
         }
       }
 
@@ -1227,10 +1237,9 @@ header{
   width: 100%;
   height: 100%;
   position: relative;
+  transition: .3s;
   &:hover{
-    .clip-blue{
-      clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
-    }
+    transform: scale(1.1);
 
   }
   .image{
@@ -1398,6 +1407,13 @@ footer{
       font-size: 1rem;
       font-weight: 400;
       letter-spacing: 0.64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      a{
+        color: #000;
+      }
     }
   }
 }
