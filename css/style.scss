@@ -260,7 +260,7 @@ body {
       }
 
       .image{
-        //max-width: 500px;
+        max-width: 500px;
         width: 100%;
         height: 500px;
         img{
@@ -1265,6 +1265,9 @@ header{
     @media (max-width: 576px) {
       padding: 190px 8px 0 15px;
     }
+    @media (max-width: 425px) {
+      padding: 155px 8px 0 15px;
+    }
     h4{
       color: #FFF;
       font-size: 1.1rem;
@@ -1273,6 +1276,9 @@ header{
       text-transform: uppercase;
       @media (max-width: 576px) {
         font-size: 1.8rem;
+      }
+      @media (max-width: 425px) {
+        font-size: 1.4rem;
       }
     }
     p{
@@ -1283,6 +1289,9 @@ header{
       letter-spacing: 0.64px;
       @media (max-width: 576px) {
         font-size: 1.4rem;
+      }
+      @media (max-width: 425px) {
+        font-size: 1.1rem;
       }
     }
   }
@@ -1384,6 +1393,9 @@ footer{
       i{
         font-size: 2rem;
       }
+      .fa-whatsapp{
+        font-size: 2.2rem;
+      }
     }
   }
 
@@ -1414,6 +1426,23 @@ footer{
       a{
         color: #000;
       }
+    }
+  }
+}
+
+#row-modal-info{
+  .modal-images-col{
+    margin-bottom: 15px;
+  }
+  .modal-images-item{
+    width: 100%;
+    height: 100%;
+    @include flex('sb', 'c');
+    flex-direction: column;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
