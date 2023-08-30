@@ -98,26 +98,26 @@ $('.slider').slick({
         // instead of a settings object
     ]
 });
-
-$('.gallery-photo').on('click', function (e) {
-
-    e.preventDefault();
-
-    const items = [],
-      options = {
-          index: $(this).index()
-      };
-
-    $('.gallery-photo').each(function () {
-        let src = $(this).attr('href');
-        items.push({
-            src: src
-        });
-    });
-
-    new PhotoViewer(items, options);
-
-});
+//
+// $('.gallery-photo').on('click', function (e) {
+//
+//     e.preventDefault();
+//
+//     const items = [],
+//       options = {
+//           index: $(this).index()
+//       };
+//
+//     $('.gallery-photo').each(function () {
+//         let src = $(this).attr('href');
+//         items.push({
+//             src: src
+//         });
+//     });
+//
+//     new PhotoViewer(items, options);
+//
+// });
 
 
 // Modal-info img
@@ -127,13 +127,13 @@ const AllImages = [
     class: 'col-md-4',
     image: [
       'assets/image/slider1.png',
-      'assets/image/slider2.png'
+      'assets/image/slider2.jpg'
     ]
   },
   {
     class: 'col-md-4',
     image: [
-      'assets/image/slider3.png'
+      'assets/image/slider3.jpg'
     ]
   },
   {
@@ -153,7 +153,7 @@ const AllImages = [
   {
     class: 'col-md-4',
     image: [
-      'assets/image/slider7.png'
+      'assets/image/slider7.jpg'
     ]
   },
   // row
@@ -180,13 +180,13 @@ const AllImages = [
   {
     class: 'col-md-4',
     image: [
-      'assets/image/slider13.png'
+      'assets/image/slider13.jpg'
     ]
   },
   {
     class: 'col-md-4',
     image: [
-      'assets/image/slider14.png',
+      'assets/image/slider14.jpg',
       'assets/image/slider16.png',
     ]
   },
@@ -257,7 +257,7 @@ const AllImages = [
   {
     class: 'col-md-4',
     image: [
-      'assets/image/slider29.png'
+      'assets/image/slider29.jpg'
     ]
   },
   // row
