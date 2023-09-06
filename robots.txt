@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-Host: https://rimplitka.ru/
-Sitemap: https://rimplitka.ru/sitemap.xml
+Host: https://mir-darog.ru/
+Sitemap: https://mir-darog.ru/sitemap.xml
