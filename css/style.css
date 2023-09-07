@@ -20,6 +20,11 @@
   background: #2a2929;
 }
 
+::selection {
+  background: #000;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +54,7 @@ a {
 }
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 body {
@@ -381,6 +386,11 @@ body {
 }
 .menu .container {
   height: 100% !important;
+}
+@media (max-width: 576px) {
+  .menu .container .logo img {
+    margin-left: 10px;
+  }
 }
 .menu .container .menu-item {
   display: flex;

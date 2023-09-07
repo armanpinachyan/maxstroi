@@ -22,6 +22,11 @@
   background: #2a2929;
 }
 
+::selection{
+  background: #000;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +58,7 @@ a {
 
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -426,8 +431,16 @@ body {
   .container {
     height: 100% !important;
 
+    .logo{
+      img {
+        @media (max-width: 576px) {
+          margin-left: 10px;
+        }
+      }
+    }
 
     .menu-item {
+
       display: flex;
       justify-content: space-between;
       align-items: center;
